@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Halimat Yakubu | Software Developer</title>
+<meta name="description" content="Transforming ideas into interactive and seamless digital experiences with cutting-edge frontend development.">
+<meta property="og:title" content="Halimat Yakubu | Software Developer">
+<meta property="og:description" content="Transforming ideas into interactive and seamless digital experiences with cutting-edge frontend development.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="iceDots" aria-hidden="true"></div>
+<div id="loader" aria-hidden="true">
+  <div class="loader-box">
+    <span id="loader-text"></span>
+    <div class="loader-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="loader-bar"><i id="loader-fill"></i></div>
+      <span class="loader-pct" id="loader-pct">0%</span>
+    </div>
+  </div>
+</div>
+<header>
+  <div class="bar">
+    <nav aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+   </div>
+    <button class="toggle" id="theme" type="button" aria-label="Switch color theme">
+      <svg id="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"></svg>
+      <span id="lbl"></span>
+    </button>
+</header>
+
+<main>
+<section id="home" class="hero wrap">
+  <p class="hello" id="hero-name">Halimat Yakubu</p>
+  <h1 class="heading-sweep">Software Developer</h1>
+  <p class="lead">Building interfaces with a little personality and the engineering to back it up. <br> Ask me anything in code. I'm fluent.</p>
+  <div class="links">
+    <a class="btn primary" href="#contact" aria-label="Gmail"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+  <path fill="#4285F4" d="M1.636 6.364v11.272A1.364 1.364 0 0 0 3 19h2.727v-7.091L1.636 8.84V6.364z"/>
+  <path fill="#34A853" d="M18.273 19H21a1.364 1.364 0 0 0 1.364-1.364V6.364L18.273 11.91V19z"/>
+  <path fill="#FBBC04" d="M18.273 5.273v6.636l4.091-3.068V6.364A1.364 1.364 0 0 0 20.182 5.27l-1.909.003z"/>
+  <path fill="#EA4335" d="M5.727 11.909V5.273L12 9.977l6.273-4.704v6.636L12 16.614z"/>
+  <path fill="#C5221F" d="M1.636 6.364v2.477l4.091 3.068V5.273L3.818 5.27a1.364 1.364 0 0 0-2.182 1.094z"/>
+</svg></a>
+    <a class="btn" href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" aria-hidden="true">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+</svg></a>
+    <a class="btn" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" aria-hidden="true">
+  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+</svg></a>
+  </div>
+  <a class="scroll-cue" href="#services" aria-label="Scroll to What I do">
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+  </a>
+</section>
+
+<div class="marquee" aria-label="Technologies I work with">
+  <div class="track" id="track"></div>
+</div>
+
+<section class="wrap" id="services">
+  <h2 class="heading-sweep">What I do</h2>
+  <div class="about-intro">
+    <div class="about-copy">
+      <p> I build websites that are as whimsical as they are practical. For me, code is a way of saying something: about a problem that won’t leave me alone, or an idea that needs to be brought to life.
+      </p>
+      <p> If it runs on code, I've probably got a fix.</p>
+    </div>
+    <div class="about-side">
+      <dl class="about-meta">
+        <div><dt>Focus</dt><dd>Fullstack Web Development &amp; Engineering</dd></div>
+        <div><dt>Availability</dt><dd>Open to full-time &amp; freelance work</dd></div>
+      </dl>
+      <a class="btn about-btn" href="resume.html">View Resume</a>
+    </div>
+  </div>
+  <div class="services">
+    <div class="acc">
+      <div class="acc-item open" data-n="10" data-suffix="+" data-label="Pages &amp; apps shipped" data-bars="HTML &amp; CSS (Vanilla, Tailwind):95|JavaScript &amp; TypeScript:90|React:85">
+        <h3><button class="acc-btn" id="b1" aria-expanded="true" aria-controls="p1">Frontend Development<span class="chev" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="p1" role="region" aria-labelledby="b1"><ul><li>Single-page applications (SPA)</li><li>UI/UX implementation</li><li>React Native mobile apps</li></ul></div>
+      </div>
+      <div class="acc-item" data-n="5" data-suffix="+" data-label="Projects" data-bars="Node.js:90|Express:88|MongoDB:85">
+        <h3><button class="acc-btn" id="b2" aria-expanded="false" aria-controls="p2">Backend Development<span class="chev" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="p2" role="region" aria-labelledby="b2"><ul><li>API development and integration</li><li>Database design and management </li><li>Authentication and security configuration</li></ul></div>
+      </div>
+      <div class="acc-item" data-n="15" data-suffix="+" data-label="Web copies written" data-bars="SEMrush:88|Grammarly:95|Hemingway:90">
+        <h3><button class="acc-btn" id="b3" aria-expanded="false" aria-controls="p3">Web Copy &amp; SEO<span class="chev" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="p3" role="region" aria-labelledby="b3"><ul><li>Landing page copy</li><li>SEO content writing</li><li>Website overhaul copy</li></ul></div>
+      </div>
+    </div>
+    <div class="stage" aria-live="polite">
+      <div class="big"><span id="num">0</span><span id="suf">+</span></div>
+      <p class="cap" id="cap">&nbsp;</p>
+      <div id="bars"></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="wrap">
+  <h2 class="heading-sweep">Projects</h2>
+  <div class="proj-grid">
+    <article class="proj">
+      <div class="proj-media">
+         <a href="https://barter-2-0-djz1p4x7d-halimat-yakubus-projects.vercel.app/" aria-label="View XForensic live website"><img src="images/barterapp.jpg" alt="XForensic interface preview" loading="lazy"></a>
+      </div>
+      <div class="proj-body">
+        <h3>Barter</h3>
+        <p class="sub"><em>A skills exchange platform for students and freelancers.</em></p>
+        <p class="proj-desc"><strong>The itch: </strong>Students and freelancers have plenty of skills but not much cash. Money shouldn't be the only currency. </p>
+        <p class="proj-desc"><strong>What I made: </strong> The frontend for a skills-swapping platform, where people list what they offer, find what they need and trade directly.</p>
+        <p class="proj-desc"><strong>Where it stands: </strong>Built and ready for its first users.</p>
+        <div class="proj-foot">
+          <span class="proj-status">Learning Project | JS | CSS</span>
+          <div class="go">
+            <a href="https://github.com/Halimat-Yakubu/BARTER2.0" target="_blank" rel="noopener" aria-label="View XForensic code on GitHub" title="View code on GitHub"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></a>
+            <a href="https://barter-2-0-djz1p4x7d-halimat-yakubus-projects.vercel.app/" aria-label="View XForensic live website" title="View live website"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="proj-media">
+         <a href="https://xforensic-suite.onrender.com/" aria-label="View Project Two live website"><img src="images/xforensic.jpg" alt="Project Two interface preview" loading="lazy"></a>
+      </div>
+      <div class="proj-body">
+        <h3>Xforensic</h3>
+        <p class="sub"><em>Digital forensics and log analysis dashboard for inspecting threat events in real time.</em></p>
+        <p class="proj-desc"><strong>The itch: </strong> Threat data is overwhelming. When something suspicious happens, nobody has time to dig through raw logs.</p>
+
+        <p class="proj-desc"><strong> What I made: </strong> The frontend for a dashboard that lets analysts inspect threat events in real time, turning a flood of log data into something readable.</p>
+
+        <p class="proj-desc"><strong>The result: </strong> Analysts can spot and investigate threats faster, from one clear view.</p>
+        <div class="proj-foot">
+          <span class="proj-status">Collaborator | JS | CSS</span>
+          <div class="go">
+            <a href="https://github.com/zhuluh247/XForensic-Suite" target="_blank" rel="noopener" aria-label="View Project Two code on GitHub" title="View code on GitHub"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></a>
+            <a href="https://xforensic-suite.onrender.com/" aria-label="View Project Two live website" title="View live website"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="proj-media">
+      <a href="https://sadie-art.vercel.app/" aria-label="View Project Three live website"><img src="images/artfolio.jpg" alt="Project Three interface preview" loading="lazy"></a>
+      </div>
+      <div class="proj-body">
+        <h3>Art Project Management system</h3>
+        <p class="sub">An art portfolio you can manage yourself</p>
+
+        <p class="proj-desc"><strong>The itch: </strong> My artworks were scattered, and I wanted one place to show them off and keep them organized.</p>
+
+        <p class="proj-desc"><strong>What I made: </strong> A portfolio where I can upload, edit and delete artworks and preview them as visitors would see them.</p>
+
+        <p class="proj-desc"><strong>The result: </strong>My work has a proper home that I control without touching code.</p>
+        <div class="proj-foot">
+          <span class="proj-status">Learning Project | NodeJS | CSS </span>
+          <div class="go">
+            <a href="https://github.com/Halimat-Yakubu/Artfolio" target="_blank" rel="noopener" aria-label="View Project Three code on GitHub" title="View code on GitHub"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></a>
+            <a href="https://sadie-art.vercel.app/" aria-label="View Project Three live website" title="View live website"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="proj-media">
+        <a href="https://rococo-capybara-c329d3.netlify.app/" aria-label="View Project Four live website"><img src="images/tifetoki.jpg" alt="Project Four interface preview" loading="lazy"></a>
+      </div>
+      <div class="proj-body">
+        <h3>Tifetoki</h3>
+        <p class="sub">An interactive wedding invitation website
+
+        <p class="proj-desc"><strong>The itch: </strong> Wedding invitations are usually a card, a link and a spreadsheet of replies. They rarely feel like the couple.</p>
+
+        <p class="proj-desc"><strong>What I made: </strong> An invitation that walks guests through the couple's journey, collects their RSVP and shows each guest their seat on the seating chart.</p>
+
+        <p class="proj-desc"><strong>The result: </strong> Guests get an experience instead of a PDF, and the couple gets their RSVPs in one place.</p>
+        <div class="proj-foot">
+          <span class="proj-status">Deployed | JS | CSS</span>
+          <div class="go">
+            <a href="https://github.com/Halimat-Yakubu/T-T" target="_blank" rel="noopener" aria-label="View Project Four code on GitHub" title="View code on GitHub"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></a>
+            <a href="https://rococo-capybara-c329d3.netlify.app/" aria-label="View Project Four live website" title="View live website"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+  <p class="more">More projects on <a href="https://github.com/Halimat-Yakubu" target="_blank" rel="noopener">GitHub</a></p>
+</section>
+
+<section id="contact" class="wrap">
+  <div class="contact">
+    <div>
+      <h2 class="heading-sweep">Let's Talk</h2>
+      <p>Got a question or a project in mind? Feel free to reach out.</p>
+      <p>Location: Nigeria.</p>
+    </div>
+    <form id="form">
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Message<textarea name="message" required></textarea></label>
+      <button class="btn primary" type="submit">Send message</button>
+      <p class="thanks" id="thanks" role="status">Thank you for your message! I’ll reply soon.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Your Name. All rights reserved.</span>
+    <span class="footer-links"><a href="#contact" aria-label="Gmail"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+  <path fill="#4285F4" d="M1.636 6.364v11.272A1.364 1.364 0 0 0 3 19h2.727v-7.091L1.636 8.84V6.364z"/>
+  <path fill="#34A853" d="M18.273 19H21a1.364 1.364 0 0 0 1.364-1.364V6.364L18.273 11.91V19z"/>
+  <path fill="#FBBC04" d="M18.273 5.273v6.636l4.091-3.068V6.364A1.364 1.364 0 0 0 20.182 5.27l-1.909.003z"/>
+  <path fill="#EA4335" d="M5.727 11.909V5.273L12 9.977l6.273-4.704v6.636L12 16.614z"/>
+  <path fill="#C5221F" d="M1.636 6.364v2.477l4.091 3.068V5.273L3.818 5.27a1.364 1.364 0 0 0-2.182 1.094z"/>
+</svg></a> &nbsp; <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" aria-hidden="true">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+</svg></a> &nbsp; <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" aria-hidden="true">
+  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+</svg></a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

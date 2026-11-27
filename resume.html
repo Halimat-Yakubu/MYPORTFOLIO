@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Resume | Halimat Yakubu</title>
+<meta name="description" content="Resume for Halimat Yakubu — Software Developer.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .resume-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 28px 0 18px;
+    border-bottom: 1px solid var(--line);
+  }
+  .resume-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .resume-actions .btn {
+    padding: 10px 18px;
+    font-size: .88rem;
+    cursor: pointer;
+    background: transparent;
+    color: var(--text);
+    font-family: inherit;
+  }
+  .resume-sheet {
+    padding: 44px 0 80px;
+  }
+  .resume-head {
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 36px;
+  }
+  .resume-head h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin: 0 0 8px;
+  }
+  .resume-role {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0 0 14px;
+  }
+  .resume-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    font-size: .88rem;
+    color: var(--muted);
+  }
+  .resume-links a:hover {
+    color: var(--text);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .resume-block {
+    margin-bottom: 36px;
+  }
+  .resume-block h2 {
+    margin: 0 0 16px;
+    font-size: 1.05rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .resume-block p,
+  .resume-block li {
+    color: var(--muted);
+    font-size: .94rem;
+  }
+  .resume-list {
+    margin: 0;
+    padding-left: 18px;
+    display: grid;
+    gap: 8px;
+  }
+  .resume-item {
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+  }
+  .resume-item:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+  .resume-item-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+  .resume-item h3 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+  .resume-item span {
+    font-size: .82rem;
+    color: var(--muted);
+  }
+  @media print {
+    :root {
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --text: #111111;
+      --muted: #444444;
+      --line: #d4d4d8;
+    }
+    .resume-bar,
+    #iceDots {
+      display: none;
+    }
+    .resume-sheet {
+      padding: 0;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="resume-bar">
+    <a class="btn" href="index.html">← Back to Portfolio</a>
+    <div class="resume-actions">
+      <button class="btn" type="button" onclick="window.print()">Print / Save PDF</button>
+    </div>
+  </div>
+
+  <main class="resume-sheet">
+    <div class="resume-head">
+      <h1>Halimat Yakubu</h1>
+      <p class="resume-role">Software Developer — Frontend Engineering &amp; UI/UX</p>
+      <div class="resume-links">
+        <a href="mailto:halimatyakubu50@gmail.com">halimatyakubu50@gmail.com</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <section class="resume-block">
+      <h2>Summary</h2>
+      <p>Software Developer crafting interactive, accessible, and responsive web applications. Experienced in translating UI/UX prototypes into clean, maintainable React, TypeScript, HTML5, CSS3, and Node.js solutions.</p>
+    </section>
+
+    <section class="resume-block">
+      <h2>Technical Skills</h2>
+      <ul class="resume-list">
+        <li><strong>Frontend:</strong> React, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS</li>
+        <li><strong>Backend &amp; Databases:</strong> Node.js, ExpressJS, MongoDB, MySQL</li>
+        <li><strong>Design &amp; Tooling:</strong> Figma, Canva, UX Research, Responsive Prototyping, Git</li>
+      </ul>
+    </section>
+
+    <section class="resume-block">
+      <h2>Selected Projects</h2>
+      <div class="resume-item">
+        <div class="resume-item-top">
+          <h3>XForensic</h3>
+          <span>Deployed</span>
+        </div>
+        <p>Digital forensics and log analysis dashboard for inspecting threat events in real time.</p>
+      </div>
+      <div class="resume-item">
+        <div class="resume-item-top">
+          <h3>Project Two</h3>
+          <span>In development</span>
+        </div>
+        <p>Responsive task workflow and team collaboration workspace built with modern web tooling.</p>
+      </div>
+      <div class="resume-item">
+        <div class="resume-item-top">
+          <h3>Project Three</h3>
+          <span>Contributor</span>
+        </div>
+        <p>Open-source UI component library and interactive data visualization toolkit.</p>
+      </div>
+      <div class="resume-item">
+        <div class="resume-item-top">
+          <h3>Project Four</h3>
+          <span>Deployed</span>
+        </div>
+        <p>Fast, accessible storefront landing experience with custom animations and theme support.</p>
+      </div>
+    </section>
+
+    <section class="resume-block">
+      <h2>Core Focus Areas</h2>
+      <ul class="resume-list">
+        <li>Single Page Applications (SPAs), landing pages, and portfolio websites</li>
+        <li>Mobile-friendly web apps and React Native mobile interfaces</li>
+        <li>UI design systems, UX improvements, and interactive prototyping</li>
+      </ul>
+    </section>
+  </main>
+</div>
+<script>
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+</body>
+</html>
